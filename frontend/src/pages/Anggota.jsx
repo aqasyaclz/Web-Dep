@@ -97,30 +97,27 @@ const Anggota = () => {
       </section>
 
       {/* Mahasiswa Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-gradient-to-b from-white to-red-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <Badge className="bg-red-600 text-white mb-4">Peneliti Muda</Badge>
+            <Badge className="bg-red-600 text-white mb-4">Anggota Tim</Badge>
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Mahasiswa Peneliti</h2>
             <p className="text-gray-600 text-lg">Mahasiswa aktif yang terlibat dalam penelitian laboratorium</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {mahasiswaData.map((mhs, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 overflow-hidden hover:-translate-y-2">
-                <div className="relative h-64 overflow-hidden">
-                  <img 
-                    src={mhs.foto} 
-                    alt={mhs.nama}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-red-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <CardContent className="p-4 text-center">
-                  <h3 className="font-bold text-gray-900 mb-1 group-hover:text-red-600 transition-colors">{mhs.nama}</h3>
-                  <Badge variant="outline" className="border-red-300 text-red-600 text-xs">
-                    Angkatan {mhs.angkatan}
-                  </Badge>
+              <Card 
+                key={index} 
+                className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 hover:border-red-500 bg-white"
+              >
+                <CardContent className="p-6 text-center">
+                  <h3 className="font-bold text-red-600 text-lg mb-2 group-hover:text-red-700 transition-colors">
+                    {mhs.nama}
+                  </h3>
+                  <p className="text-gray-600 text-sm font-medium">
+                    {mhs.nim}
+                  </p>
                 </CardContent>
               </Card>
             ))}
