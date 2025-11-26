@@ -22,14 +22,21 @@ const Anggota = () => {
   ];
 
   const mahasiswaData = [
-    { nama: "Ahmad Fauzi", foto: "/1.jpg", angkatan: "2021" },
-    { nama: "Siti Nurhaliza", foto: "/2.jpg", angkatan: "2021" },
-    { nama: "Budi Santoso", foto: "/3.jpg", angkatan: "2022" },
-    { nama: "Dewi Lestari", foto: "/4.jpg", angkatan: "2022" },
-    { nama: "Eko Prasetyo", foto: "/5.jpg", angkatan: "2022" },
-    { nama: "Fitri Handayani", foto: "/6.jpg", angkatan: "2023" },
-    { nama: "Gilang Ramadhan", foto: "/7.jpg", angkatan: "2023" },
-    { nama: "Hani Pertiwi", foto: "/8.jpg", angkatan: "2023" }
+    { nama: "DEA AULIA MASIKU", nim: "H021231002" },
+    { nama: "FAJRIANA ARIS", nim: "H021231014" },
+    { nama: "ICHA NURANDHINI", nim: "H021231021" },
+    { nama: "ALGIZA IDAM", nim: "H021231028" },
+    { nama: "SERLI", nim: "H021231032" },
+    { nama: "WIRNI AULIA RAMADHANI", nim: "H021231040" },
+    { nama: "NURFAIKA", nim: "H021231048" },
+    { nama: "TASYHA SRI DESIANA", nim: "H021231049" },
+    { nama: "KASYFIL AZIZ", nim: "H021231058" },
+    { nama: "SUCI RAHMAYADA", nim: "H021231059" },
+    { nama: "ARMITHA ANAS", nim: "H021231060" },
+    { nama: "MOH. ARYANSYAH RIZQULLAH DAENUNU", nim: "H021231062" },
+    { nama: "ILMA FADHILAH", nim: "H021231064" },
+    { nama: "EKA ADELIA PUTRI SARIMAN", nim: "H021231065" },
+    { nama: "AQASYA CLAUDIA ZAHNITA", nim: "H021231068" }
   ];
 
   return (
